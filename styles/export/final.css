@@ -1,0 +1,252 @@
+/*
+     X
+     XX                       X                 X      XX   X     X
+     X                        X                       XX    XX    X
+    XXX                       X           X    X                  X
+     XXXXX   XXXX X     XXXXXXX      X    X    X       XXXX     XX
+     XX   X  X   XX     X    XXXX    XX   X    X           XXXXX
+     XXXXX   XXXXXXXXX  XXXXX   X     XXXXX    X
+
+*/
+/*
+    Not implemented yet.
+*/
+/* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
+   It should allow for easy, color customisations.
+   It's imported into most of the SCSS stylesheets.
+   It also contains things like the font-stack.
+*/
+/* Gradients. */
+/* If you don't use more than 1 gradient, then you can comment/cut out the rest. */
+/* Animations */
+/* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
+   It should allow for easy, color customisations.
+   It's imported into most of the SCSS stylesheets.
+   It also contains things like the font-stack.
+*/
+/* Gradients. */
+/* If you don't use more than 1 gradient, then you can comment/cut out the rest. */
+/* Animations */
+@keyframes move {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+/* This defines styles. The bulk of things are stores here. */
+/* Gradients and related stuff */
+.live-grad {
+  animation: move 40s ease infinite; }
+
+.bg-coregrad {
+  background-image: linear-gradient(45deg, #250A16, #9d2b5e); }
+
+.bg-grad1 {
+  background-image: linear-gradient(45deg, #ED213A, #93291E); }
+
+/* Feel free to comment out the below if you only use 1 gradient. */
+.bg-grad2 {
+  background-image: linear-gradient(45deg, #ee0979, #ff6a00); }
+
+/* Classes that are actuallyclasses. */
+.head {
+  font-weight: bold; }
+
+/* Utility classes */
+.padded {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px; }
+
+.marged {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px; }
+
+.rounded {
+  border-radius: 5px; }
+
+.card {
+  box-shadow: 0 4pxpx 8pxpx 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+  .card :hover {
+    box-shadow: 0 8pxpx 16pxpx 0 rgba(0, 0, 0, 0.2); }
+
+.mid {
+  justify-content: center;
+  align-items: center; }
+
+.flex, .mid, .w200px, .w100p {
+  display: flex;
+  flex-wrap: wrap; }
+
+.inline-block {
+  display: inline-block; }
+
+.wide {
+  letter-spacing: 5px; }
+
+.large, .head {
+  font-size: 1.5em; }
+
+.larger {
+  font-size: 3em; }
+
+.too-large {
+  font-size: 7.5em; }
+
+.light, .head {
+  color: white; }
+
+.base-col {
+  color: #f8f8f8; }
+
+.dark {
+  color: #b8b8b8; }
+
+.hidden, .fadein {
+  opacity: 0; }
+
+.w200px {
+  width: 200px; }
+
+.w100p {
+  width: 100%; }
+
+/* Animation classes */
+.fadein {
+  animation: fadein 1s;
+  animation-fill-mode: forwards; }
+  .fadein.one {
+    animation-delay: 0.4s; }
+  .fadein.two {
+    animation-delay: 0.8s; }
+  .fadein.three {
+    animation-delay: 1.2s; }
+
+/* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
+   It should allow for easy, color customisations.
+   It's imported into most of the SCSS stylesheets.
+   It also contains things like the font-stack.
+*/
+/* Gradients. */
+/* If you don't use more than 1 gradient, then you can comment/cut out the rest. */
+/* Animations */
+/* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
+   It should allow for easy, color customisations.
+   It's imported into most of the SCSS stylesheets.
+   It also contains things like the font-stack.
+*/
+/* Gradients. */
+/* If you don't use more than 1 gradient, then you can comment/cut out the rest. */
+/* Animations */
+@keyframes move {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+/* This defines styles. The bulk of things are stores here. */
+html {
+  height: 100%; }
+
+body {
+  /* Feel free to comment it out if you get issues. */
+  display: block;
+  /* Colors are importand for a reason.*/
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  color: #f8f8f8;
+  /* Static background */
+  background: #250A16;
+  /* Standardisation. */
+  font-size: 16px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  height: 100%;
+  /* Gradients */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 200% 200%; }
+
+break {
+  /* Hacky flexbox breaks. */
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  flex-basis: 100%; }
+
+a {
+  color: white;
+  transition: 0.5s;
+  text-decoration: none; }
+  a:hover {
+    color: #ebebeb; }
+
+header, footer {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100px; }
+  header.pico, footer.pico {
+    height: 24px;
+    background: rgba(0, 0, 0, 0.3); }
+
+footer {
+  position: fixed;
+  bottom: 0; }
+
+/* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
+   It should allow for easy, color customisations.
+   It's imported into most of the SCSS stylesheets.
+   It also contains things like the font-stack.
+*/
+/* Gradients. */
+/* If you don't use more than 1 gradient, then you can comment/cut out the rest. */
+/* Animations */
+@keyframes move {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+/* This is the final stylesheet. 
+   Importing everything should allow for modular design.
+   This should make maintaining it easier.
+*/
+
+/*# sourceMappingURL=final.css.map */
