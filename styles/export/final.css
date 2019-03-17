@@ -127,7 +127,10 @@
 .h-br {
   height: 0;
   width: 1px;
-  background: transparent; }
+  background: rgba(0, 0, 0, 0); }
+
+.footer-fa {
+  margin-right: 10px; }
 
 /* Animation classes */
 .fadein {
@@ -220,7 +223,8 @@ header, footer {
 
 footer {
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  padding: 5px; }
 
 /* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
    It should allow for easy, color customisations.
@@ -251,5 +255,3 @@ footer {
    Importing everything should allow for modular design.
    This should make maintaining it easier.
 */
-
-/*# sourceMappingURL=final.css.map */
