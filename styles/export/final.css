@@ -80,10 +80,10 @@
   border-radius: 5px; }
 
 .card {
-  box-shadow: 0 4pxpx 8pxpx 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s; }
-  .card :hover {
-    box-shadow: 0 8pxpx 16pxpx 0 rgba(0, 0, 0, 0.2); }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
 .mid {
   justify-content: center;
@@ -127,7 +127,7 @@
 .h-br {
   height: 0;
   width: 1px;
-  background: rgba(0, 0, 0, 0); }
+  background: transparent; }
 
 .footer-fa {
   margin-right: 10px; }
@@ -226,6 +226,11 @@ footer {
   bottom: 0;
   padding: 5px; }
 
+code {
+  font-family: monospace;
+  background: #4d152e;
+  color: #dfdfdf; }
+
 /* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
    It should allow for easy, color customisations.
    It's imported into most of the SCSS stylesheets.
@@ -255,3 +260,5 @@ footer {
    Importing everything should allow for modular design.
    This should make maintaining it easier.
 */
+
+/*# sourceMappingURL=final.css.map */
