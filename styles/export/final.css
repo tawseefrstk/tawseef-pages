@@ -143,6 +143,10 @@
   .fadein.three {
     animation-delay: 1.2s; }
 
+/* The JS is needed for the following classes to work. */
+.clear-load, .card {
+  transition: none !important; }
+
 /* Editing this stylesheet allows you to quickly change the colors used globally in the stylesheet. 
    It should allow for easy, color customisations.
    It's imported into most of the SCSS stylesheets.
